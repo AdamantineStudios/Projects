@@ -1,0 +1,13 @@
+MEETING_CENTRES
+EBC Classic 7,EBC-MC_C7,Executive Briefing Centre - Classic 7 Praha Hole�ovice - Jankovcova
+EBC Paruk��ka,EBC-MC_PAR,Executive Briefing Centre - Paruk��ka Praha �i�kov - V Kapslovn�
+EBC Brno,EBC-MC_BRNO,Executive Briefing Centre - Brno
+MEETING_ROOMS
+1.1 Alpha,EBC-C7-MR:1_1,Standardn� zasedac� m�stnost,8,False,EBC-MC_C7
+1.2 Beta,EBC-C7-MR:1_2,Standardn� zasedac� m�stnost,8,False,EBC-MC_C7
+1.3 Connect,EBC-C7-MR:1_3,Standardn� zasedac� m�stnost s video konferenc�,12,True,EBC-MC_C7
+2.4 Delta,EBC-C7-MR:2_4,Velk� zasedac� m�stnost s video konferenc�,30,True,EBC-MC_C7
+2.5 Epsilon,EBC-C7-MR:2_5,Velk� �kol�rna s velkou tabul� a projekc�,50,True,EBC-MC_C7
+0.1 Edison,EBC-PAR-MR:0_1,U�ebna ,30,False,EBC-MC_PAR
+1.1 Einstein,EBC-PAR-MR:1_1,Velk� u�ebna,50,False,EBC-MC_PAR
+1.2 Tesla,EBC-PAR-MR:1_2,Men�� u�ebna,12,False,EBC-MC_PAR

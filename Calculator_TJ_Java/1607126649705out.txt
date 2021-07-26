@@ -1,0 +1,29 @@
+Welcome to your repayment overview file: 
+The amount you wanted to loan is: 3500000.0
+The total amount you pay us back  in the end is: 3876173.81
+The amount of extra money you will pays us is: 376173.81
+Your monthly payment to us will be: 161507.24
+| Payment in month 1: 161507.24
+| Payment in month 2: 161507.24
+| Payment in month 3: 161507.24
+| Payment in month 4: 161507.24
+| Payment in month 5: 161507.24
+| Payment in month 6: 161507.24
+| Payment in month 7: 161507.24
+| Payment in month 8: 161507.24
+| Payment in month 9: 161507.24
+| Payment in month 10: 161507.24
+| Payment in month 11: 161507.24
+| Payment in month 12: 161507.24
+| Payment in month 13: 161507.24
+| Payment in month 14: 161507.24
+| Payment in month 15: 161507.24
+| Payment in month 16: 161507.24
+| Payment in month 17: 161507.24
+| Payment in month 18: 161507.24
+| Payment in month 19: 161507.24
+| Payment in month 20: 161507.24
+| Payment in month 21: 161507.24
+| Payment in month 22: 161507.24
+| Payment in month 23: 161507.24
+| Payment in month 24: 161507.24

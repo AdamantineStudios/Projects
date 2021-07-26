@@ -1,0 +1,34 @@
+{
+  "{asid}": {
+    "profileList": ["AsidOwner"],
+    "permissionMap": {
+      "{asidOwner}": ["AsidOwner"]
+    },
+    "useCaseMap": {}
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","Participants","AwidOwner"],
+    "useCaseMap": {
+      "init": ["AwidOwner"],
+      "load": ["AwidOwner", "Authorities", "Executives"],
+      "update": ["AwidOwner"],
+      "defaultUve": ["Public"],
+      "trip/create": ["Authorities","Executives"],
+      "trip/get": ["Authorities","Executives","Participants"],
+      "trip/list": ["Authorities","Executives","Participants"],
+      "trip/update": ["Authorities","Executives"],
+      "trip/delete": ["Authorities","Executives"],
+      "trip/addRating": ["Participants"],
+      "location/create": ["Authorities"],
+      "location/list": ["Authorities","Executives","Participant"],
+      "location/get": ["Authorities","Executives","Participant"],
+      "location/update": ["Authorities"],
+      "location/delete": ["Authorities"],
+      "participant/create": ["Authorities","Executives"],
+      "participant/get": ["Authorities","Executives","Participants"],
+      "participant/list": ["Authorities","Executives","Participants"],
+      "participant/update": ["Authorities","Executives"],
+      "participant/delete": ["Authorities","Executives"]
+    }
+  }
+}
