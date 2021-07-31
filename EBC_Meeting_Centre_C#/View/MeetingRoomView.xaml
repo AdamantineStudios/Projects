@@ -1,0 +1,26 @@
+﻿<Window x:Class="EBC_Meeting_Centre_Tomas_Jerousek.View.MeetingRoomView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EBC_Meeting_Centre_Tomas_Jerousek.View"
+        mc:Ignorable="d"
+        Title="MeetingRoomView" Height="450" Width="800" Background="DimGray">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" Background="Gray">
+            <Label Content="Meeting Room Settings" HorizontalAlignment="Left" Height="40" Margin="10,0,0,10" Width="345" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Name" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0" Width="80" FontWeight="Bold" />
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,0,0,0" TextWrapping="Wrap" x:Name="tbName" Background="LightGray" Width="135"/>
+            <Label Content="Code" HorizontalAlignment="Left" Height="30" Margin="10,5,0,0" Width="80" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,0,0,0" TextWrapping="Wrap" x:Name="tbCoode" Background="LightGray" Width="135"/>
+            <Label Content="Description" HorizontalAlignment="Left" Height="35" Margin="10,0,0,0" Width="80" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,0,0,0" TextWrapping="Wrap" x:Name="tbDescription" Background="LightGray" Width="135"/>
+            <Label Content="Capacity" HorizontalAlignment="Left" Height="35" Margin="10,5,0,0" Width="80" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="10,5,0,0" TextWrapping="Wrap" x:Name="tbCapacity" Background="LightGray" Width="135"/>
+            <CheckBox Content="Video Conference" Margin="10,15,0,0" x:Name="cbVideoConference" Background="LightGray"/>
+            <Button Content="Cancel" HorizontalAlignment="Left" Height="25" Margin="220,0,0,0" Width="80" x:Name="bCancel" Click="bCancelClick" Background="Red"/>
+            <Button Content="Confirm" HorizontalAlignment="Left" Height="25" Margin="220,20,0,0" Width="80" FontWeight="Bold" x:Name="bConfirm" Click="bConfirmClick" Background="LightGreen"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

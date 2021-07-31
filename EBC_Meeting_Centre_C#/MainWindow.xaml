@@ -1,0 +1,105 @@
+﻿<Window x:Class="EBC_Meeting_Centre_Tomas_Jerousek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EBC_Meeting_Centre_Tomas_Jerousek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="950" Width="800" Closing="CloseMainWindow" Background="DimGray">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Save" Click="MenuItemSave_Click"/>
+                <MenuItem Header="Import Data" Click="MenuImport_Click"/>
+                <MenuItem Header="Exit" Click="MenuExit_Click"/>
+            </Menu>
+            <TabControl Height="900" Width="700" VerticalAlignment="Top" SelectionChanged="TabSelectionChangeControl">
+                <TabItem Header="Meeting Centres and Rooms" FontWeight="Bold">
+                    <Grid>
+                        <StackPanel HorizontalAlignment="Left" Width="350" Background="Gray">
+                            <Label Content="Meeting Centres" FontWeight="Bold" FontSize="15"/>
+                            <ListBox x:Name="lbMC" Height="150" Width="300" Margin="0,5,0,10" SelectionChanged="lbMCSelection" Background="LightGray"/>
+                            <StackPanel Height="25" Orientation="Horizontal" Width="320">
+                                <Button Content="Delete" FontWeight="Bold" x:Name="btnMCDelete" Margin="10,0,0,0" Click="bMCDeleteClick" Background="red"></Button>
+                                <Button Content="Edit" x:Name="btnMCEdit" FontWeight="Bold" Margin="175,0,0,0" Click="bMCEditClick" Background="LightBlue"></Button>
+                                <Button Content="Add" x:Name="btnMCAdd" FontWeight="Bold" Margin="32,0,0,0" Click="bMCAddCick" Background="LightGreen"></Button>
+                            </StackPanel>
+                            <Label Content="Meeting Centre Information" FontWeight="Bold" FontSize="13" Margin="0,10,0,0"></Label>
+                            <Label Content="Name" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMCName" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Code" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMCCode" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Description" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMCDescription" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                           
+                        </StackPanel>
+                        
+                        <StackPanel HorizontalAlignment="Left" Width="350" Margin="350,0,0,0" Background="Gray">
+                            <Label Content="Meeting Rooms" FontWeight="Bold" FontSize="15"></Label>
+                            <ListBox x:Name="lbMR" Height="150" Width="300" Margin="0,5,0,10" SelectionChanged="lbMRSelection" Background="LightGray"/>
+                            <StackPanel Height="25" Orientation="Horizontal" Width="320">
+                                <Button Content="Delete" FontWeight="Bold" x:Name="btnMRDelete" Margin="10,0,0,0" Click="bMRDeleteClick" Background="Red"></Button>
+                                <Button Content="Edit" x:Name="btnMREdit" FontWeight="Bold" Margin="175,0,0,0" Click="bMREditClick" Background="LightBlue"></Button>
+                                <Button Content="Add" x:Name="btnMRAdd" FontWeight="Bold" Margin="32,0,0,0" Click="bMRAddClick" Background="LightGreen"></Button>
+                            </StackPanel>
+                            <Label Content="Meeting Room Information" FontWeight="Bold" FontSize="13" Margin="0,10,0,0"></Label>
+                            <Label Content="Name" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMRName" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Code" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMRCode" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Description" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMRDescription" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Capacity" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbMRCapacity" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <CheckBox Content="Video Conference" x:Name="cbMRVideoConference" Margin="10,15,0,0" Background="LightGray"></CheckBox>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Reservations" x:Name="tabReservations" FontWeight="Bold">
+                    <Grid>
+                        <StackPanel HorizontalAlignment="Left" Width="350" Background="Gray">
+                            <Label Content="Reservation Settings" FontWeight="Bold" FontSize="15"></Label>
+                            <Label Content="Meeting Centres" FontWeight="Bold"></Label>
+                            <ComboBox x:Name="cbMCReservation" SelectionChanged="cbMCReservationSelected" Margin="0,5,0,0" Background="LightGray"></ComboBox>
+                            <Label Content="Meeting Rooms" FontWeight="Bold" Margin="0,5,0,0"></Label>
+                            <ComboBox x:Name="cbMRReservation" SelectionChanged="cbMRReservationSelected" Margin="0,5,0,0" Background="LightGray"></ComboBox>
+                            <Label Content="Reservation Date" FontWeight="Bold" Margin="0,5,0,0"></Label>
+                            <DatePicker x:Name="dpReservationDate" SelectedDateChanged="dpReservationDateSelected" Margin="0,5,0,0" Background="LightGray"></DatePicker>
+                            <Label Content="Reserved Dates" FontWeight="Bold" Margin="0,5,0,0"></Label>
+                            <ListBox x:Name="lbReservations" Height="150" Width="300" Margin="0,5,0,10" SelectionChanged="lbReservationsSelected" Background="LightGray"/>
+                            <StackPanel Height="25" Orientation="Horizontal" Width="320">
+                                <Button Content="Delete" FontWeight="Bold" x:Name="btnReservationDelete" Margin="10,0,0,0" Click="bReservationDeleteClick" Background="Red"></Button>
+                                <Button Content="Edit" x:Name="btnReservationEdit" FontWeight="Bold" Margin="175,0,0,0" Click="bReservationEditClick" Background="LightBlue"></Button>
+                                <Button Content="Add" x:Name="bReservationAdd" FontWeight="Bold" Margin="32,0,0,0" Click="bReservationAddClick" Background="LightGreen"></Button>
+                            </StackPanel>
+
+
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Width="350" Margin="350,0,0,0" Background="Gray">
+                            <Label Content="Reservation Information" FontWeight="Bold" FontSize="15"></Label>
+                            <Label Content="Customer" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbReservationCustomer" Width="200" Margin="0,5,125,0" Background="LightGray" IsReadOnly="true"></TextBox>
+                            <Label Content="Expected Persons Count" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbReservationExpectedPersonCount" Width="200" Margin="0,5,125,0" Background="LightGray" IsReadOnly="true"></TextBox>
+                            <Label Content="Note" FontWeight="Bold"></Label>
+                            <TextBox x:Name="tbReservationNote" Width="200" Margin="0,5,125,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            <Label Content="Time" FontWeight="Bold"></Label>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox x:Name="tbFromHour" Width="50" Margin="10,0,0,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                                <Label Content=":"></Label>
+                                <TextBox x:Name="tbFromMinute" Width="50" Margin="10,0,0,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                                <Label Content="---->"></Label>
+                                <TextBox x:Name="tbToHour" Width="50" Margin="10,0,0,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                                <Label Content=":"></Label>
+                                <TextBox x:Name="tbToMinute" Width="50" Margin="10,0,0,0" IsReadOnly="true" Background="LightGray"></TextBox>
+                            </StackPanel>
+                            <CheckBox Content="Video Conference" Margin="5,10,0,0" IsHitTestVisible="False" x:Name="cbVideoConferenceInformation" Background="LightGray"></CheckBox>
+                            <Button Content="Export" FontWeight="Bold" x:Name="btnReservationExportClick" Margin="0,147,0,0" Click="bReservationExportClick" Background="Yellow"></Button>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+        
+    </Grid>
+</Window>

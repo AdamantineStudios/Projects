@@ -1,0 +1,6 @@
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\EBC_Meeting_Centre_Tomas_Jerousek.csprojAssemblyReference.cache
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\MainWindow.g.cs
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\View\MeetingRoomView.g.cs
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\App.g.cs
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\EBC_Meeting_Centre_Tomas_Jerousek_MarkupCompile.cache
+D:\C#\EBC_Meeting_Centre_Tomas_Jerousek\obj\Release\EBC_Meeting_Centre_Tomas_Jerousek_MarkupCompile.lref
